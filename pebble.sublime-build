@@ -1,0 +1,15 @@
+{
+	//Set correct path to pebble command on next line
+	"cmd": ["/usr/local/Cellar/pebble-sdk/3.0-beta11/bin/pebble build"], 
+	"working_dir": "${project_path:${folder}}",
+	"shell": true, 
+	"variants":
+	[
+		{
+			"name": "Run",
+			//Set correct path to pebble command on next line as well as set your phone IP address 
+			//to be able to upload pebble app to your watches
+			"cmd": ["/usr/local/Cellar/pebble-sdk/3.0-beta11/bin/pebble install --phone 192.168.1.149"]
+		}
+	]
+}
